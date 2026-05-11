@@ -1,5 +1,3 @@
-use std::{collections::HashMap, vec};
-
 pub struct Solution; // 空の構造体を定義
 
 /*
@@ -11,7 +9,8 @@ pub struct Solution; // 空の構造体を定義
 impl Solution {
     pub fn two_sum(nums: Vec<i32>, target: i32) -> Vec<i32> {
         // 1. ハッシュマップを用意する
-        let mut map: HashMap<i32, usize> = HashMap::with_capacity(nums.len()); // capacityを読み込むとプログラムが安定する
+        let mut map: std::collections::HashMap<i32, usize> =
+            std::collections::HashMap::with_capacity(nums.len()); // capacityを読み込むとプログラムが安定する
 
         // 2. hashMapの中にあるかどうかを判定する
         for (i, &n) in nums.iter().enumerate() {
