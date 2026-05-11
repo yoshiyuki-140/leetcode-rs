@@ -32,6 +32,6 @@ mod tests {
     #[test]
     fn test_example1() {
         let result = Solution::contains_duplicate(vec![1, 2, 3, 1]);
-        assert_eq!(result, true);
+        assert!(result);
     }
 }
