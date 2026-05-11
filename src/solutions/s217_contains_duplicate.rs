@@ -1,5 +1,3 @@
-use std::collections::HashMap;
-
 pub struct Solution;
 
 /*
@@ -11,7 +9,8 @@ pub struct Solution;
 impl Solution {
     pub fn contains_duplicate(nums: Vec<i32>) -> bool {
         // ハッシュマップを使えばいい気がします
-        let mut hash_map: HashMap<i32, bool> = HashMap::with_capacity(nums.len());
+        let mut hash_map: std::collections::HashMap<i32, bool> =
+            std::collections::HashMap::with_capacity(nums.len());
         // ハッシュマップを使うのがいい気がします。
 
         for n in nums {
