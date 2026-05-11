@@ -44,11 +44,11 @@ mod tests {
     #[test]
     fn test_example1() {
         let result = Solution::is_anagram(String::from("anagram"), String::from("nagaram"));
-        assert_eq!(result, true);
+        assert!(result);
     }
     #[test]
     fn test_example2() {
         let result = Solution::is_anagram(String::from("rat"), String::from("car"));
-        assert_eq!(result, false);
+        assert!(!result);
     }
 }
