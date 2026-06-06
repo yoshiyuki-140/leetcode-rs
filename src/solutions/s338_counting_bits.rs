@@ -1,5 +1,6 @@
 pub struct Solution;
 
+#[cfg(any())]
 impl Solution {
     pub fn count_bits(n: i32) -> Vec<i32> {
         // bitをカウントする
@@ -15,6 +16,15 @@ impl Solution {
             result.push(counter);
         }
         result
+    }
+}
+
+// 最適化
+impl Solution {
+    pub fn count_bits(n: i32) -> Vec<i32> {
+        // count_onesはCPUのPOPCNTを呼び出してる
+        // collectはイテレータの処理結果を戻り値の型であるVec<i32>に自動で変換してる
+        (0..=n).map(|i| i.count_ones() as i32).collect()
     }
 }
 
