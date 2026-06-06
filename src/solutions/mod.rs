@@ -1,4 +1,5 @@
 pub mod s121_best_time_to_by_and_sell_stock;
+pub mod s136_single_number;
 pub mod s190_reverse_bits;
 pub mod s191_number_of_1_bits;
 pub mod s1_two_sum;
