@@ -1,5 +1,6 @@
 pub struct Solution;
 
+#[cfg(any())]
 impl Solution {
     pub fn missing_number(nums: Vec<i32>) -> i32 {
         // 和を計算
@@ -8,6 +9,18 @@ impl Solution {
             sum -= n;
         }
         sum
+    }
+}
+
+// Rustらしいイテレータを使った書き方
+impl Solution {
+    pub fn missing_number(nums: Vec<i32>) -> i32 {
+        let l = nums.len();
+        // 0からnまでの合計値
+        let expected_sum = (l * (l + 1) / 2) as i32;
+        // 実際の合計値
+        let actual_sum: i32 = nums.iter().sum();
+        expected_sum - actual_sum
     }
 }
 
