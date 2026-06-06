@@ -4,5 +4,6 @@ pub mod s191_number_of_1_bits;
 pub mod s1_two_sum;
 pub mod s217_contains_duplicate;
 pub mod s242_valid_anagram;
+pub mod s268_missing_number;
 pub mod s338_counting_bits;
 pub mod s70_climbing_stairs;
