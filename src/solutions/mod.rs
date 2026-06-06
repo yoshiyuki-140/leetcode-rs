@@ -7,4 +7,5 @@ pub mod s217_contains_duplicate;
 pub mod s242_valid_anagram;
 pub mod s268_missing_number;
 pub mod s338_counting_bits;
+pub mod s703_kth_largest_element_in_a_stream;
 pub mod s70_climbing_stairs;
